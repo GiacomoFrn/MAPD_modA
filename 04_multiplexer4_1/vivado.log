@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 10 14:29:38 2021
+# Process ID: 3048
+# Current directory: C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/multiplexer4_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12420 C:\Users\giaco\Documents\Universit\PoD\MaPD\lab\multiplexer4_1\multiplexer4_1.xpr
+# Log file: C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/multiplexer4_1/vivado.log
+# Journal file: C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/multiplexer4_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/multiplexer4_1/multiplexer4_1.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/multiplexer2_1/multiplexer2_1.srcs/sources_1/new/mux21.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 722.371 ; gain = 104.320
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/03_multiplexer2_1/multiplexer2_1.srcs/sources_1/new/mux21.vhd
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 10 14:31:06 2021...

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../multiplexer2_1.srcs/sources_1/new/mux21.vhd" \
+"../../../../multiplexer2_1.srcs/sim_1/new/tb_mux21.vhd" \
+
+# Do not sort compile order
+nosort
