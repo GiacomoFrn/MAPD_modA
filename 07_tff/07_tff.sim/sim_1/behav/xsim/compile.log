@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/07_tff/07_tff.srcs/sources_1/new/tff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tff'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/07_tff/07_tff.srcs/sim_1/new/tb_tff.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_tff'
