@@ -1,3 +1,10 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+
+
 entity adder_4b is 
     Port(a_in : in std_logic_vector(3 downto 0));
         (b_in : in std_logic_vector(3 downto 0));

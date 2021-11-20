@@ -1,5 +1,12 @@
 --Version to show the ame thing in the real simulation
 
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+
+
 architecture Behavioral of tb_cmb_clk is
     Port (clk : in std_logic;
         rst : in std_logic;

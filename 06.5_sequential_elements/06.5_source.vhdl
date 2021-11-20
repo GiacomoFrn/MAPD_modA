@@ -1,3 +1,11 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+
+
+
 entity cmb_clk is
   Port (clk : in std_logic;
         rst : in std_logic;
