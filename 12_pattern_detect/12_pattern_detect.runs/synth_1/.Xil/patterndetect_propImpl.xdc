@@ -1,0 +1,11 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/12_pattern_detect/12_pattern_detect.srcs/constrs_1/new/mapping.xdc rfile:../../../12_pattern_detect.srcs/constrs_1/new/mapping.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=gclk[100]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E1    IOSTANDARD LVCMOS33 } [get_ports { y }]; #IO_L22N_T3_35 Sch=led2_g
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN D9    IOSTANDARD LVCMOS33 } [get_ports { a[0] }]; #IO_L6N_T0_VREF_16 Sch=btn[0]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C9    IOSTANDARD LVCMOS33 } [get_ports { a[1] }]; #IO_L11P_T1_SRCC_16 Sch=btn[1]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN B9    IOSTANDARD LVCMOS33 } [get_ports { rst }]; #IO_L11N_T1_SRCC_16 Sch=btn[2]
