@@ -8,7 +8,7 @@ entity patterndetect is
     rst : in std_logic;
     y : out std_logic);
 end entity patterndetect;
-
+    
 architecture rtl of patterndetect is
 
 type state_t is (S0, S1, S2, S3, Detect);

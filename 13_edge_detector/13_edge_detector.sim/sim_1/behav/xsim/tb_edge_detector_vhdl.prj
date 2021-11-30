@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../06_d_t_filpflop/06_d_t_filpflop.srcs/sources_1/new/dff.vhd" \
+"../../../../13_edge_detector.srcs/sources_1/new/edge_detector.vhd" \
+"../../../../../10_synchronizer/10_synchronizer.srcs/sources_1/new/synchronizer.vhd" \
+"../../../../13_edge_detector.srcs/sim_1/new/tb_edge_detector.vhd" \
+
+# Do not sort compile order
+nosort
