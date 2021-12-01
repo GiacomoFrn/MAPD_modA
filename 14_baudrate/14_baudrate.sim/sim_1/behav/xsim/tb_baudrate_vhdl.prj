@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../14_baudrate.srcs/sources_1/new/baudrate.vhd" \
+"../../../../14_baudrate.srcs/sim_1/new/tb_baudrate.vhd" \
+
+# Do not sort compile order
+nosort

@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 30.11.2021 17:52:00
+-- Create Date: 01.12.2021 13:00:22
 -- Design Name: 
--- Module Name: baudrate - Behavioral
+-- Module Name: tb_baudrate - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,33 +31,25 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity baudrate is
+entity tb_baudrate is
+--  Port ( );
+end tb_baudrate;
+
+architecture Behavioral of tb_baudrate is
+component baudrate is
     Port ( 
         clk: in std_logic;
         o  : out std_logic
     );
-end baudrate;
+end component;
 
-
-
-architecture rtl of baudrate is
-
-signal count: integer range 0 to 868;
-signal tmp: integer range 0 to 868;
-
+signal clk_s, o_s:std_logic;
 
 begin
-    process(clk) is         
+    uut: baudrate port map(clk=>clk_s, o=>o_s);
+    p_clk: process
     begin
-        if rising_edge(clk) then
-            o <= '0';
-            tmp <= count;
-            count <= tmp +1;
-        
-            if count = 434 then --ask why half counts
-                o <= '1';
-                count <= 0;
-            end if;
-         end if;
+        clk_s <= '0'; wait for 10 ns;
+        clk_s <= '1'; wait for 10 ns;
     end process;
-end rtl;
+end Behavioral;
