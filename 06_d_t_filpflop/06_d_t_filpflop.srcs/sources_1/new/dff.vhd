@@ -29,10 +29,14 @@ entity dff is
         q : out std_logic);
 end entity dff;
 architecture rtl of dff is
+signal clk_d: std_logic:= '0';
+signal clk_re: std_logic;
 begin -- architecture rtl
     flipflop : process (clk) is
     begin -- process flipflop
-        if rising_edge(clk) then -- rising clock edge
+        clk_d <= clk;
+        clk_re <= not clk_d and clk;
+        if clk_re = '1' then -- rising clock edge
             if rst = '1' then
                 q <= '0';
             else
