@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../14_baudrate/14_baudrate.srcs/sources_1/new/baudrate.vhd" \
+"../../../../16_uart_receiver.srcs/sources_1/new/receiver.vhd" \
+"../../../../16_uart_receiver.srcs/sim_1/new/tb_receiver.vhd" \
+
+# Do not sort compile order
+nosort

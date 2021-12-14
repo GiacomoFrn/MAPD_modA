@@ -73,6 +73,7 @@ begin
     if(rising_edge(clk)) then
     case state is
         when IDLE => 
+        uart_tx<= '1';
         if valid_sync = '1' then
             state <= DATA_IS_VALID;
             word <= data_in;
@@ -124,6 +125,7 @@ begin
         when B7 =>
         if baudrate_out = '1' then
             state <= STOP;
+            uart_tx<= '1';
         end if;  
         when STOP =>
         if baudrate_out = '1' then
