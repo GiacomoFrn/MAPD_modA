@@ -60,10 +60,9 @@ begin
     
     p_input : process
     begin
-        input <= '0'; wait for 43.0 ns;
-        input <= '1'; wait for 75.0 ns;
-        input <= '0'; wait for 43.0 ns;
-        input <= '1'; wait for 50.0 ns;
+        input <= '0'; wait for 30.0 ns;
+        input <= '1'; wait for 10.0 ns;
+        input <= '0'; wait;
     end process;
     
 end Behavioral;
