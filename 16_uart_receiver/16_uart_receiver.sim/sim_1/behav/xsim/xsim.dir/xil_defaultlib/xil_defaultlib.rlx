@@ -2,6 +2,9 @@
 2018.3
 Dec  7 2018
 00:33:28
+C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/06_d_t_filpflop/06_d_t_filpflop.srcs/sources_1/new/dff.vhd,1638983321,vhdl,,,,dff,,,,,,,,
+C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/10_synchronizer/10_synchronizer.srcs/sources_1/new/synchronizer.vhd,1637684103,vhdl,,,,sync,,,,,,,,
 C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/14_baudrate/14_baudrate.srcs/sources_1/new/baudrate.vhd,1639500535,vhdl,,,,baudrate,,,,,,,,
-C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/16_uart_receiver/16_uart_receiver.srcs/sim_1/new/tb_receiver.vhd,1639500316,vhdl,,,,tb_receiver,,,,,,,,
-C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/16_uart_receiver/16_uart_receiver.srcs/sources_1/new/receiver.vhd,1639501439,vhdl,,,,receiver,,,,,,,,
+C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/15_uart/15_uart.srcs/sources_1/new/uart.vhd,1639571335,vhdl,,,,uart,,,,,,,,
+C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/16_uart_receiver/16_uart_receiver.srcs/sim_1/new/tb_receiver.vhd,1639570578,vhdl,,,,tb_receiver,,,,,,,,
+C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/16_uart_receiver/16_uart_receiver.srcs/sources_1/new/receiver.vhd,1639571698,vhdl,,,,receiver,,,,,,,,

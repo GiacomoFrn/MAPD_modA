@@ -31,17 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity uart is
+entity transmitter is
     port(
        -- baudrate_out: in std_logic;
         clk  : in std_logic;
         data_in: in std_logic_vector(7 downto 0);
         valid: in std_logic;
-        uart_tx: out std_logic;
-        out_baud: out std_logic);
-end uart;
+        uart_tx: out std_logic);
+end transmitter;
 
-architecture rtl of uart is
+architecture rtl of transmitter is
     component baudrate is
         Port ( 
             clk_b: in std_logic;
@@ -68,8 +67,7 @@ begin
     b: baudrate port map(clk_b=>clk, o_b=>baudrate_out);
     s: sync port map(clk=>baudrate_out, input=>valid, sync_input=>valid_sync, rst=>rst, internal=>internal);
     main: process(clk)
-    begin
-    out_baud <= baudrate_out; 
+    begin 
     if(rising_edge(clk)) then
     case state is
         when IDLE => 
@@ -81,6 +79,7 @@ begin
         when DATA_IS_VALID =>
         if baudrate_out = '1' then
             state <= START;
+            uart_tx<= '0';
         end if;
         when START =>
         if baudrate_out = '1' then

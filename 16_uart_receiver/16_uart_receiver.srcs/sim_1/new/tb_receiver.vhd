@@ -40,15 +40,17 @@ component receiver is
     Port (
         clk_rx: in std_logic;
         --uart_rx: in std_logic;
-        --received_data: out std_logic_vector(7 downto 0)
-        delayed_baud: out std_logic
+        received_data: out std_logic_vector(7 downto 0)
+        --delayed_baud: out std_logic
          );
 end component;
 
-signal clk_s, out_s: std_logic;
+signal clk_s: std_logic;
+signal received_data_s: std_logic_vector(7 downto 0);
+
 begin
 
-uut: receiver port map(clk_rx=>clk_s, delayed_baud=>out_s);
+uut: receiver port map(clk_rx=>clk_s, received_data=>received_data_s);
 
 p_clk :  process
     begin

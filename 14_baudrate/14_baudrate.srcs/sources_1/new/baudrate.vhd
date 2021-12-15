@@ -33,8 +33,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity baudrate is
     Port ( 
-        clk: in std_logic;
-        o  : out std_logic
+        clk_b: in std_logic;
+        o_b  : out std_logic
     );
 end baudrate;
 
@@ -43,19 +43,17 @@ end baudrate;
 architecture rtl of baudrate is
 
 signal count: integer range 0 to 868;
-signal tmp: integer range 0 to 868;
 
 
 begin
-    process(clk) is         
+    process(clk_b) is         
     begin
-        if rising_edge(clk) then
-            o <= '0';
-            tmp <= count;
-            count <= tmp +1;
+        if rising_edge(clk_b) then
+            o_b <= '0';
+            count <= count +1;
         
-            if count = 434 then --ask why half counts
-                o <= '1';
+            if count = 6 then 
+                o_b <= '1';
                 count <= 0;
             end if;
          end if;

@@ -1,7 +1,10 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../../14_baudrate/14_baudrate.srcs/sources_1/new/baudrate.vhd" \
+"../../../../../06_d_t_filpflop/06_d_t_filpflop.srcs/sources_1/new/dff.vhd" \
 "../../../../16_uart_receiver.srcs/sources_1/new/receiver.vhd" \
+"../../../../../10_synchronizer/10_synchronizer.srcs/sources_1/new/synchronizer.vhd" \
+"../../../../../15_uart/15_uart.srcs/sources_1/new/uart.vhd" \
 "../../../../16_uart_receiver.srcs/sim_1/new/tb_receiver.vhd" \
 
 # Do not sort compile order
