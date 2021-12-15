@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_uart_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_uart" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="245800001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_uart/clk_s" type="logic">
+      <obj_property name="ElementShortName">clk_s</obj_property>
+      <obj_property name="ObjectShortName">clk_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/input_s" type="logic">
+      <obj_property name="ElementShortName">input_s</obj_property>
+      <obj_property name="ObjectShortName">input_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/r/delayed_baud" type="logic">
+      <obj_property name="ElementShortName">delayed_baud</obj_property>
+      <obj_property name="ObjectShortName">delayed_baud</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/r/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/r/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/t/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/t/baudrate_out" type="logic">
+      <obj_property name="ElementShortName">baudrate_out</obj_property>
+      <obj_property name="ObjectShortName">baudrate_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/t/valid_sync" type="logic">
+      <obj_property name="ElementShortName">valid_sync</obj_property>
+      <obj_property name="ObjectShortName">valid_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/uut/t/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_uart/output_s" type="logic">
+      <obj_property name="ElementShortName">output_s</obj_property>
+      <obj_property name="ObjectShortName">output_s</obj_property>
+   </wvobject>
+</wave_config>
