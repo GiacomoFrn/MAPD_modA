@@ -47,6 +47,7 @@ signal baud_re, baud_rx: std_logic;
 signal delayed_baud: std_logic;
 type state_type is (COUNTING, STOP,IDLE);
 signal state : state_type := IDLE;
+signal out_rx_s: std_logic_vector(7 downto 0);
 
 begin
 
@@ -66,7 +67,7 @@ begin
         if flag = '1' then
            count := count +1;
         end if;
-        if count = 3 then
+        if count = 434 then
             flag := '0';
             count := 0;
             delayed_baud <= '1';
@@ -74,28 +75,37 @@ begin
     end if;
 end process;
 
-read: process(delayed_baud)
+read: process(clk_rx)
 variable count_read: integer range 0 to 9;
 begin
-    if delayed_baud = '1' then
-        valid <= '0';
+    if rising_edge(clk_rx) then
+        
         case state is
             when IDLE =>
+            out_rx_s<= (others => '0');
+            valid <= '0';
             if uart_rx = '0' then
                 state <= COUNTING;
             end if;
             when COUNTING =>
-            if count_read < 7 then
-                out_rx(7-count_read) <= uart_rx;
-                count_read := count_read+1;
-            else
-                out_rx(7-count_read) <= uart_rx;
-                state <= STOP;
-                count_read := 0;
+            if delayed_baud = '1' then
+                if count_read = 0 then
+                    count_read := count_read+1;
+                elsif count_read < 8 then
+                    out_rx_s(count_read-1) <= uart_rx;
+                    count_read := count_read+1;
+                else
+                    out_rx_s(count_read-1) <= uart_rx;
+                    state <= STOP;
+                    count_read := 0;
+                end if;
             end if;
             when STOP =>
+            if delayed_baud = '1' then
                 state <= IDLE;
-                valid <= '1'; 
+                valid <= '1';
+                out_rx <= out_rx_s; 
+            end if;
         end case;
     end if;
 end process;

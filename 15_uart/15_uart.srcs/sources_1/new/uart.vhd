@@ -56,7 +56,7 @@ architecture rtl of transmitter is
             sync_input : out std_logic);
     end component;
     
-    signal word: std_logic_vector(7 downto 0);
+    --signal word: std_logic_vector(7 downto 0);
     type state_type is (DATA_IS_VALID, START, B0, B1, B2, B3, B4, B5, B6, B7, STOP, IDLE);
     signal state : state_type := IDLE;
     
@@ -65,68 +65,70 @@ architecture rtl of transmitter is
 begin
     --state <= IDLE;
     b: baudrate port map(clk_b=>clk, o_b=>baudrate_out);
-    s: sync port map(clk=>baudrate_out, input=>valid, sync_input=>valid_sync, rst=>rst, internal=>internal);
+    --s: sync port map(clk=>baudrate_out, input=>valid, sync_input=>valid_sync, rst=>rst, internal=>internal);
     main: process(clk)
     begin 
+    --valid_sync <= '1';
     if(rising_edge(clk)) then
     case state is
         when IDLE => 
         uart_tx<= '1';
-        if valid_sync = '1' then
+        if valid = '1' then
             state <= DATA_IS_VALID;
-            word <= data_in;
+            --valid_sync <= '0';
+            --word <= data_in;
         end if;
         when DATA_IS_VALID =>
         if baudrate_out = '1' then
             state <= START;
-            uart_tx<= '0';
         end if;
         when START =>
+        uart_tx<= '0';
         if baudrate_out = '1' then
             state <= B0;
-            uart_tx<= word(7);
         end if; 
         when B0 =>
+        uart_tx<= data_in(0);
         if baudrate_out = '1' then
             state <= B1;
-            uart_tx<= word(6);
         end if;
         when B1 =>
+        uart_tx<= data_in(1);
         if baudrate_out = '1' then
             state <= B2;
-            uart_tx<= word(5);
         end if;
         when B2 =>
+        uart_tx<= data_in(2);
         if baudrate_out = '1' then
             state <= B3;
-            uart_tx<= word(4);
         end if;
         when B3 =>
+        uart_tx<= data_in(3);
         if baudrate_out = '1' then
             state <= B4;
-            uart_tx<= word(3);
         end if; 
         when B4 =>
+        uart_tx<= data_in(4);
         if baudrate_out = '1' then
             state <= B5;
-            uart_tx<= word(2);
         end if; 
         when B5 =>
+        uart_tx<= data_in(5);
         if baudrate_out = '1' then
             state <= B6;
-            uart_tx<= word(1);
         end if; 
         when B6 =>
+        uart_tx<= data_in(6);
         if baudrate_out = '1' then
             state <= B7;
-            uart_tx<= word(0);
         end if; 
         when B7 =>
+        uart_tx<= data_in(7);
         if baudrate_out = '1' then
             state <= STOP;
-            uart_tx<= '1';
         end if;  
         when STOP =>
+        uart_tx<= '1';
         if baudrate_out = '1' then
             state <= IDLE;
         end if; 

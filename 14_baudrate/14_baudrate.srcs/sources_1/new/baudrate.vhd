@@ -44,15 +44,13 @@ architecture rtl of baudrate is
 
 signal count: integer range 0 to 868;
 
-
 begin
     process(clk_b) is         
     begin
         if rising_edge(clk_b) then
             o_b <= '0';
             count <= count +1;
-        
-            if count = 6 then 
+            if count = 868 then 
                 o_b <= '1';
                 count <= 0;
             end if;

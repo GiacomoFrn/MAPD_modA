@@ -5,6 +5,7 @@ entity uart is
     port (
         input: in std_logic;
         clk: in std_logic;
+        --valid_s: in std_logic;
         output: out std_logic );
 end uart;
 
@@ -28,16 +29,17 @@ component transmitter is
 end component;
 
 signal receiver_out: std_logic_vector(7 downto 0);
-signal valid_s, out_s: std_logic;
+signal out_s, valid_s: std_logic; 
 
 begin
 
+--receiver_out <= "01000001";
 r: receiver    port map(clk_rx=>clk, uart_rx=>input, out_rx=>receiver_out, valid=>valid_s);
-t: transmitter port map(clk=>clk, data_in=>receiver_out, valid=>valid_s, uart_tx=>out_s);
+t: transmitter port map(clk=>clk, data_in=>receiver_out, valid=>valid_s, uart_tx=>output);
 
-main: process(clk)
-begin
-    output<=out_s;
-end process;
+--main: process(clk)
+--begin
+--    output<=out_s;
+--end process;
 
 end Behavioral;
