@@ -1,0 +1,12 @@
+# Dummy gitignore file
+
+/*.zip
+
+/**/ip/*/*
+!/**/ip/*/*.xci
+#!/**/ip/**/.keep
+
+/proj/*
+!/proj/.keep
+
+/repo/cache/*
