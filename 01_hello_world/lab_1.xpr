@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/giaco/Documents/Universit/PoD/MaPD/lab/lab_1/lab_1.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/01_hello_world/lab_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="beeb82d18cc948cabb84c7004ca921fc"/>
