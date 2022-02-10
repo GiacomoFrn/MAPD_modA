@@ -13,7 +13,7 @@ import os
 #FILTER DESIGN
 numtaps = 13
 f = 4000
-coeff = signal.firwin(numtaps, f, pass_zero ='lowpass',fs=44100)
+coeff = signal.firwin(numtaps, f, pass_zero ='lowpass',fs=16000)
 
 #FILTER FREQUENCY RESPONSE
 fft_coeff = fftpack.fft(coeff)
