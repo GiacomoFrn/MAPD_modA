@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/giaco/Documents/Uni/PoD/MaPD/vivado_proj/demo_pmod/demo_pmod.runs/synth_1'
+HD_PWD='C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/demo_pmod/demo_pmod.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
