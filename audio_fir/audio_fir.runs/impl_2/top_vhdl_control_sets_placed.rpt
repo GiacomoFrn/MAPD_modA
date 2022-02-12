@@ -1,0 +1,74 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Feb 12 11:46:19 2022
+| Host         : DESKTOP-A6N5RC6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_vhdl_control_sets_placed.rpt
+| Design       : top_vhdl
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    14 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             643 |          159 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             359 |           95 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              96 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+|     Clock Signal     |          Enable Signal         |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+|  m_clk/inst/axis_clk | m_i2s2/tx_data_l_shift0_in[23] |                              |                4 |             23 |
+|  m_clk/inst/axis_clk | m_i2s2/tx_data_r_shift[23]     |                              |                4 |             23 |
+|  m_clk/inst/axis_clk | m_i2s2/rx_data_r_shift_1       |                              |               10 |             24 |
+|  m_clk/inst/axis_clk | m_i2s2/rx_data_l_shift_2       |                              |                9 |             24 |
+|  m_clk/inst/axis_clk | m_fir/tx_axis_s_ready_reg_0[0] | m_i2s2/rx_data_l[23]_i_1_n_0 |                6 |             24 |
+|  m_clk/inst/axis_clk | m_fir/tx_axis_s_ready_reg[0]   | m_i2s2/rx_data_l[23]_i_1_n_0 |                7 |             24 |
+|  m_clk/inst/axis_clk | m_i2s2/E[0]                    |                              |                7 |             25 |
+|  m_clk/inst/axis_clk | m_i2s2/rx_data_l0              | m_i2s2/rx_data_l[23]_i_1_n_0 |               12 |             48 |
+|  m_clk/inst/axis_clk | m_i2s2/axis_rx_valid           |                              |               61 |            240 |
+|  m_clk/inst/axis_clk |                                |                              |              159 |            643 |
++----------------------+--------------------------------+------------------------------+------------------+----------------+
+
+
