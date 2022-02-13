@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Feb 12 11:44:54 2022
-# Process ID: 15864
-# Current directory: C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.runs/synth_2
+# Start of session at: Sun Feb 13 16:05:30 2022
+# Process ID: 15480
+# Current directory: C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.runs/synth_2
 # Command line: vivado.exe -log top_vhdl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_vhdl.tcl
-# Log file: C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.runs/synth_2/top_vhdl.vds
-# Journal file: C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.runs/synth_2\vivado.jou
+# Log file: C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.runs/synth_2/top_vhdl.vds
+# Journal file: C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.runs/synth_2\vivado.jou
 #-----------------------------------------------------------
 source top_vhdl.tcl -notrace
 Command: synth_design -top top_vhdl -part xc7a35tcsg324-1
@@ -15,15 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6988 
+INFO: Helper process launched with PID 15904 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 394.125 ; gain = 100.320
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 393.492 ; gain = 100.180
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top_vhdl' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'top_vhdl' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:24]
 	Parameter RESET_POLARITY bound to: 1'b0 
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.runs/synth_2/.Xil/Vivado-15864-DESKTOP-A6N5RC6/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'm_clk' of component 'clk_wiz_0' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.runs/synth_2/.Xil/Vivado-15864-DESKTOP-A6N5RC6/realtime/clk_wiz_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'axis_i2s2' declared at 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/Pmod-I2S2-master/shared/src/hdl/axis_i2s2.v:24' bound to instance 'm_i2s2' of component 'axis_i2s2' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.runs/synth_2/.Xil/Vivado-15480-DESKTOP-A6N5RC6/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'm_clk' of component 'clk_wiz_0' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.runs/synth_2/.Xil/Vivado-15480-DESKTOP-A6N5RC6/realtime/clk_wiz_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'axis_i2s2' declared at 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/Pmod-I2S2-master/shared/src/hdl/axis_i2s2.v:24' bound to instance 'm_i2s2' of component 'axis_i2s2' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
 INFO: [Synth 8-6157] synthesizing module 'axis_i2s2' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/Pmod-I2S2-master/shared/src/hdl/axis_i2s2.v:24]
 	Parameter EOF_COUNT bound to: 9'b111000111 
 INFO: [Synth 8-6155] done synthesizing module 'axis_i2s2' (1#1) [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/Pmod-I2S2-master/shared/src/hdl/axis_i2s2.v:24]
@@ -31,21 +31,22 @@ INFO: [Synth 8-6155] done synthesizing module 'axis_i2s2' (1#1) [C:/Users/giaco/
 	Parameter DATA_WIDTH bound to: 24 - type: integer 
 	Parameter COEFF_WIDTH bound to: 24 - type: integer 
 	Parameter SCALING bound to: 23 - type: integer 
-INFO: [Synth 8-3491] module 'fir_controller' declared at 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:14' bound to instance 'm_fir' of component 'fir_controller' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'fir_controller' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:37]
+INFO: [Synth 8-3491] module 'fir_controller' declared at 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:14' bound to instance 'm_fir' of component 'fir_controller' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'fir_controller' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:37]
 	Parameter N_TAPS bound to: 11 - type: integer 
 	Parameter DATA_WIDTH bound to: 24 - type: integer 
 	Parameter COEFF_WIDTH bound to: 24 - type: integer 
 	Parameter SCALING bound to: 23 - type: integer 
-WARNING: [Synth 8-614] signal 's_axis_tvalid' is read in the process but is not in the sensitivity list [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:80]
-WARNING: [Synth 8-6014] Unused sequential element s_data_reg[10] was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-WARNING: [Synth 8-6014] Unused sequential element s_mult_reg[10] was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:108]
-WARNING: [Synth 8-3936] Found unconnected internal register 's_add_1_reg' and it is trimmed from '50' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:113]
-INFO: [Synth 8-256] done synthesizing module 'fir_controller' (2#1) [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'top_vhdl' (3#1) [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:24]
+WARNING: [Synth 8-614] signal 's_axis_tvalid' is read in the process but is not in the sensitivity list [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element s_data_reg[10] was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element s_mult_reg[10] was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:110]
+WARNING: [Synth 8-3936] Found unconnected internal register 'filtered_data_reg' and it is trimmed from '24' to '23' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:122]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_add_1_reg' and it is trimmed from '50' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'fir_controller' (2#1) [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'top_vhdl' (3#1) [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:24]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 449.641 ; gain = 155.836
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.602 ; gain = 156.289
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -54,22 +55,22 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[31] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[30] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[29] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[28] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[27] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[26] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[25] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
-WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[24] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[31] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[30] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[29] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[28] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[27] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[26] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[25] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
+WARNING: [Synth 8-3295] tying undriven pin m_i2s2:tx_axis_s_data[24] to constant 0 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/top.vhd:107]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 449.641 ; gain = 155.836
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.602 ; gain = 156.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 449.641 ; gain = 155.836
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.602 ; gain = 156.289
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -78,28 +79,28 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/giaco/Documents/Uni/PoD/MaPD/vivado_proj/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'm_clk'
 Finished Parsing XDC File [c:/Users/giaco/Documents/Uni/PoD/MaPD/vivado_proj/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'm_clk'
-Parsing XDC File [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/constrs_1/new/mapping.xdc]
-Finished Parsing XDC File [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/constrs_1/new/mapping.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/constrs_1/new/mapping.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vhdl_propImpl.xdc].
+Parsing XDC File [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/constrs_1/new/mapping.xdc]
+Finished Parsing XDC File [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/constrs_1/new/mapping.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/constrs_1/new/mapping.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vhdl_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_vhdl_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.414 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.355 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 788.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.414 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 788.414 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 788.355 ; gain = 494.551
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 788.414 ; gain = 495.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 788.355 ; gain = 494.551
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 788.414 ; gain = 495.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -108,19 +109,16 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/g
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/giaco/Documents/Uni/PoD/MaPD/vivado_proj/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for m_clk. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 788.355 ; gain = 494.551
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 788.414 ; gain = 495.102
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 788.355 ; gain = 494.551
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 788.414 ; gain = 495.102
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -138,15 +136,14 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit       Adders := 1     
 +---Registers : 
 	               49 Bit    Registers := 5     
-	               48 Bit    Registers := 9     
+	               48 Bit    Registers := 6     
 	               47 Bit    Registers := 1     
 	               32 Bit    Registers := 4     
-	               24 Bit    Registers := 25    
-	               18 Bit    Registers := 1     
+	               24 Bit    Registers := 26    
+	               23 Bit    Registers := 2     
 	                9 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
+	                1 Bit    Registers := 8     
 +---Muxes : 
 	   3 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 1     
@@ -185,12 +182,11 @@ Detailed RTL Component Info :
 	   5 Input     47 Bit       Adders := 1     
 +---Registers : 
 	               49 Bit    Registers := 5     
-	               48 Bit    Registers := 9     
+	               48 Bit    Registers := 6     
 	               47 Bit    Registers := 1     
-	               24 Bit    Registers := 21    
-	               18 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	               24 Bit    Registers := 22    
+	               23 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -207,152 +203,160 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[1][23:0]' into 'm_fir/s_data_reg[1][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[1][23:0]' into 'm_fir/s_data_reg[1][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[5][23:0]' into 'm_fir/s_data_reg[5][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[5][23:0]' into 'm_fir/s_data_reg[5][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[0][23:0]' into 'm_fir/s_data_reg[0][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[0][23:0]' into 'm_fir/s_data_reg[0][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[0][23:0]' into 'm_fir/s_data_reg[0][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[7][23:0]' into 'm_fir/s_data_reg[7][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[7][23:0]' into 'm_fir/s_data_reg[7][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[1][23:0]' into 'm_fir/s_data_reg[1][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[1][23:0]' into 'm_fir/s_data_reg[1][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[2]' and it is trimmed from '49' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:100]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[4]' and it is trimmed from '48' to '27' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[4]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[1]' and it is trimmed from '49' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:100]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[3]' and it is trimmed from '48' to '29' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[3]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[4]' and it is trimmed from '49' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:100]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[8]' and it is trimmed from '48' to '27' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[9]' and it is trimmed from '48' to '27' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[9]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[3]' and it is trimmed from '49' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:100]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[7]' and it is trimmed from '48' to '29' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[7]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[8]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[6]' and it is trimmed from '48' to '30' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[6]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[5]' and it is trimmed from '48' to '30' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[5]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[2]' and it is trimmed from '48' to '27' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[2]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[0]' and it is trimmed from '49' to '47' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:100]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[1]' and it is trimmed from '48' to '27' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[1]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:91]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[4][23:0]' into 'm_fir/s_data_reg[4][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[7][23:0]' into 'm_fir/s_data_reg[7][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[8][23:0]' into 'm_fir/s_data_reg[8][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[4][23:0]' into 'm_fir/s_data_reg[4][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[8][23:0]' into 'm_fir/s_data_reg[8][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[9][23:0]' into 'm_fir/s_data_reg[9][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.srcs/sources_1/new/fir_controller.vhd:83]
-DSP Report: Generating DSP m_fir/s_mult_reg[3]0, operation Mode is: A''*(B:0x1733a).
-DSP Report: register m_fir/s_data_reg[2] is absorbed into DSP m_fir/s_mult_reg[3]0.
-DSP Report: register m_fir/s_data_reg[3] is absorbed into DSP m_fir/s_mult_reg[3]0.
-DSP Report: operator m_fir/s_mult_reg[3]0 is absorbed into DSP m_fir/s_mult_reg[3]0.
-DSP Report: operator m_fir/s_mult_reg[3]0 is absorbed into DSP m_fir/s_mult_reg[3]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[0]0, operation Mode is: C'+A2*(B:0x139c4).
-DSP Report: register m_fir/s_data_reg[0] is absorbed into DSP m_fir/s_mult_reg[0]0.
-DSP Report: register C is absorbed into DSP m_fir/s_mult_reg[0]0.
-DSP Report: operator m_fir/s_mult_reg[0]0 is absorbed into DSP m_fir/s_mult_reg[0]0.
-DSP Report: operator m_fir/s_mult_reg[0]0 is absorbed into DSP m_fir/s_mult_reg[0]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[2]0, operation Mode is: ACIN''*(B:0x23e7).
-DSP Report: register m_fir/s_data_reg[1] is absorbed into DSP m_fir/s_mult_reg[2]0.
-DSP Report: register m_fir/s_data_reg[2] is absorbed into DSP m_fir/s_mult_reg[2]0.
-DSP Report: operator m_fir/s_mult_reg[2]0 is absorbed into DSP m_fir/s_mult_reg[2]0.
-DSP Report: operator m_fir/s_mult_reg[2]0 is absorbed into DSP m_fir/s_mult_reg[2]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[5]0, operation Mode is: (A:0x5dd91e)*B''.
-DSP Report: register B is absorbed into DSP m_fir/s_mult_reg[5]0.
-DSP Report: register B is absorbed into DSP m_fir/s_mult_reg[5]0.
-DSP Report: operator m_fir/s_mult_reg[5]0 is absorbed into DSP m_fir/s_mult_reg[5]0.
-DSP Report: operator m_fir/s_mult_reg[5]0 is absorbed into DSP m_fir/s_mult_reg[5]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[5], operation Mode is: (PCIN>>17)+(A:0x5dd91e)*B''.
-DSP Report: register B is absorbed into DSP m_fir/s_mult_reg[5].
-DSP Report: register B is absorbed into DSP m_fir/s_mult_reg[5].
-DSP Report: register m_fir/s_mult_reg[5] is absorbed into DSP m_fir/s_mult_reg[5].
-DSP Report: operator m_fir/s_mult_reg[5]0 is absorbed into DSP m_fir/s_mult_reg[5].
-DSP Report: operator m_fir/s_mult_reg[5]0 is absorbed into DSP m_fir/s_mult_reg[5].
-DSP Report: Generating DSP m_fir/s_mult_reg[4]0, operation Mode is: A''*(B:0x3923).
-DSP Report: register m_fir/s_data_reg[3] is absorbed into DSP m_fir/s_mult_reg[4]0.
-DSP Report: register m_fir/s_data_reg[4] is absorbed into DSP m_fir/s_mult_reg[4]0.
-DSP Report: operator m_fir/s_mult_reg[4]0 is absorbed into DSP m_fir/s_mult_reg[4]0.
-DSP Report: operator m_fir/s_mult_reg[4]0 is absorbed into DSP m_fir/s_mult_reg[4]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[6]0, operation Mode is: A''*(B:0xec8f).
-DSP Report: register m_fir/s_data_reg[5] is absorbed into DSP m_fir/s_mult_reg[6]0.
-DSP Report: register m_fir/s_data_reg[6] is absorbed into DSP m_fir/s_mult_reg[6]0.
-DSP Report: operator m_fir/s_mult_reg[6]0 is absorbed into DSP m_fir/s_mult_reg[6]0.
-DSP Report: operator m_fir/s_mult_reg[6]0 is absorbed into DSP m_fir/s_mult_reg[6]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[6], operation Mode is: (PCIN>>17)+A''*(B:0x17).
-DSP Report: register m_fir/s_data_reg[5] is absorbed into DSP m_fir/s_mult_reg[6].
-DSP Report: register m_fir/s_data_reg[6] is absorbed into DSP m_fir/s_mult_reg[6].
-DSP Report: register m_fir/s_mult_reg[6] is absorbed into DSP m_fir/s_mult_reg[6].
-DSP Report: operator m_fir/s_mult_reg[6]0 is absorbed into DSP m_fir/s_mult_reg[6].
-DSP Report: operator m_fir/s_mult_reg[6]0 is absorbed into DSP m_fir/s_mult_reg[6].
-DSP Report: Generating DSP m_fir/s_mult_reg[7]0, operation Mode is: ACIN2*(B:0x1733a).
-DSP Report: register m_fir/s_data_reg[7] is absorbed into DSP m_fir/s_mult_reg[7]0.
-DSP Report: operator m_fir/s_mult_reg[7]0 is absorbed into DSP m_fir/s_mult_reg[7]0.
-DSP Report: operator m_fir/s_mult_reg[7]0 is absorbed into DSP m_fir/s_mult_reg[7]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[9]0, operation Mode is: A''*(B:0x7b51).
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[1][23:0]' into 'm_fir/s_data_reg[1][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[4][23:0]' into 'm_fir/s_data_reg[4][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[5][23:0]' into 'm_fir/s_data_reg[5][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[0][23:0]' into 'm_fir/s_data_reg[0][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[0][23:0]' into 'm_fir/s_data_reg[0][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[3][23:0]' into 'm_fir/s_data_reg[3][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[2][23:0]' into 'm_fir/s_data_reg[2][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[5][23:0]' into 'm_fir/s_data_reg[5][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[4][23:0]' into 'm_fir/s_data_reg[4][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[4][23:0]' into 'm_fir/s_data_reg[4][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[7][23:0]' into 'm_fir/s_data_reg[7][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[7][23:0]' into 'm_fir/s_data_reg[7][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[1][23:0]' into 'm_fir/s_data_reg[1][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_1_reg' and it is trimmed from '47' to '46' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:115]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[0]' and it is trimmed from '49' to '46' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:102]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[1]' and it is trimmed from '49' to '46' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:102]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[3]' and it is trimmed from '49' to '46' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:102]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[6]' and it is trimmed from '48' to '29' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[4]' and it is trimmed from '49' to '46' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:102]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[8]' and it is trimmed from '48' to '28' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[8]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[7]' and it is trimmed from '48' to '28' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[7]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_data_reg[9]' and it is trimmed from '24' to '1' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[6]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_add_0_reg[2]' and it is trimmed from '49' to '46' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:102]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[5]' and it is trimmed from '48' to '29' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[5]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[4]' and it is trimmed from '48' to '28' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[4]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[3]' and it is trimmed from '48' to '28' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_fir/s_mult_reg[3]' and it is trimmed from '48' to '17' bits. [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[4][23:0]' into 'm_fir/s_data_reg[4][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[5][23:0]' into 'm_fir/s_data_reg[5][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[8][23:0]' into 'm_fir/s_data_reg[8][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[7][23:0]' into 'm_fir/s_data_reg[7][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[5][23:0]' into 'm_fir/s_data_reg[5][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[6][23:0]' into 'm_fir/s_data_reg[6][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+INFO: [Synth 8-4471] merging register 'm_fir/s_data_reg[8][23:0]' into 'm_fir/s_data_reg[8][23:0]' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element m_fir/s_mult_reg[1] was removed.  [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.srcs/sources_1/new/fir_controller.vhd:93]
+DSP Report: Generating DSP m_fir/s_mult_reg[1]0, operation Mode is: A''*(B:0x19d26).
+DSP Report: register m_fir/s_data_reg[0] is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: register m_fir/s_data_reg[1] is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: operator m_fir/s_mult_reg[1]0 is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[1]0, operation Mode is: C'+A''*(B:0x19d26).
+DSP Report: register m_fir/s_data_reg[0] is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: register m_fir/s_data_reg[1] is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: register C is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: operator m_fir/s_mult_reg[1]0 is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: operator m_fir/s_mult_reg[1]0 is absorbed into DSP m_fir/s_mult_reg[1]0.
+DSP Report: Generating DSP m_fir/s_add_0_reg[0], operation Mode is: (C'+(A2*(B:0x7b1))')'.
+DSP Report: register m_fir/s_data_reg[0] is absorbed into DSP m_fir/s_add_0_reg[0].
+DSP Report: register C is absorbed into DSP m_fir/s_add_0_reg[0].
+DSP Report: register m_fir/s_add_0_reg[0] is absorbed into DSP m_fir/s_add_0_reg[0].
+DSP Report: register m_fir/s_mult_reg[0] is absorbed into DSP m_fir/s_add_0_reg[0].
+DSP Report: operator m_fir/s_add_0_reg[0]0 is absorbed into DSP m_fir/s_add_0_reg[0].
+DSP Report: operator m_fir/s_mult_reg[0]0 is absorbed into DSP m_fir/s_add_0_reg[0].
+DSP Report: Generating DSP m_fir/s_mult_reg[9]0, operation Mode is: A''*(B:0x10301).
 DSP Report: register m_fir/s_data_reg[8] is absorbed into DSP m_fir/s_mult_reg[9]0.
 DSP Report: register m_fir/s_data_reg[9] is absorbed into DSP m_fir/s_mult_reg[9]0.
 DSP Report: operator m_fir/s_mult_reg[9]0 is absorbed into DSP m_fir/s_mult_reg[9]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[9]0, operation Mode is: C'+A''*(B:0x10301).
+DSP Report: register m_fir/s_data_reg[8] is absorbed into DSP m_fir/s_mult_reg[9]0.
+DSP Report: register C is absorbed into DSP m_fir/s_mult_reg[9]0.
+DSP Report: register m_fir/s_data_reg[9] is absorbed into DSP m_fir/s_mult_reg[9]0.
 DSP Report: operator m_fir/s_mult_reg[9]0 is absorbed into DSP m_fir/s_mult_reg[9]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[8]0, operation Mode is: A''*(B:0x23e7).
+DSP Report: operator m_fir/s_mult_reg[9]0 is absorbed into DSP m_fir/s_mult_reg[9]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[8]0, operation Mode is: A''*(B:0x1a6d).
 DSP Report: register m_fir/s_data_reg[7] is absorbed into DSP m_fir/s_mult_reg[8]0.
 DSP Report: register m_fir/s_data_reg[8] is absorbed into DSP m_fir/s_mult_reg[8]0.
 DSP Report: operator m_fir/s_mult_reg[8]0 is absorbed into DSP m_fir/s_mult_reg[8]0.
 DSP Report: operator m_fir/s_mult_reg[8]0 is absorbed into DSP m_fir/s_mult_reg[8]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[1]0, operation Mode is: A''*(B:0x7b51).
-DSP Report: register m_fir/s_data_reg[0] is absorbed into DSP m_fir/s_mult_reg[1]0.
-DSP Report: register m_fir/s_data_reg[1] is absorbed into DSP m_fir/s_mult_reg[1]0.
-DSP Report: operator m_fir/s_mult_reg[1]0 is absorbed into DSP m_fir/s_mult_reg[1]0.
-DSP Report: operator m_fir/s_mult_reg[1]0 is absorbed into DSP m_fir/s_mult_reg[1]0.
-DSP Report: Generating DSP m_fir/s_mult_reg[0]0, operation Mode is: A2*(B:0x139c4).
-DSP Report: register m_fir/s_data_reg[0] is absorbed into DSP m_fir/s_mult_reg[0]0.
-DSP Report: operator m_fir/s_mult_reg[0]0 is absorbed into DSP m_fir/s_mult_reg[0]0.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_fir/s_mult_reg[0] )
-INFO: [Synth 8-3886] merging instance 'm_fir/s_add_0_reg[0][44]' (FD) to 'm_fir/s_add_0_reg[0][45]'
-INFO: [Synth 8-3886] merging instance 'm_fir/s_add_0_reg[4][44]' (FD) to 'm_fir/s_add_0_reg[4][45]'
-INFO: [Synth 8-3886] merging instance 'm_fir/s_add_0_reg[0][45]' (FD) to 'm_fir/s_add_0_reg[0][46]'
-INFO: [Synth 8-3886] merging instance 'm_fir/s_add_0_reg[4][45]' (FD) to 'm_fir/s_add_0_reg[4][46]'
-WARNING: [Synth 8-3332] Sequential element (m_fir/s_mult_reg[0]) is unused and will be removed from module top_vhdl.
+DSP Report: Generating DSP m_fir/s_mult_reg[7]0, operation Mode is: A''*(B:0x40b1).
+DSP Report: register m_fir/s_data_reg[6] is absorbed into DSP m_fir/s_mult_reg[7]0.
+DSP Report: register m_fir/s_data_reg[7] is absorbed into DSP m_fir/s_mult_reg[7]0.
+DSP Report: operator m_fir/s_mult_reg[7]0 is absorbed into DSP m_fir/s_mult_reg[7]0.
+DSP Report: operator m_fir/s_mult_reg[7]0 is absorbed into DSP m_fir/s_mult_reg[7]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[6]0, operation Mode is: A''*(B:0x10eb).
+DSP Report: register m_fir/s_data_reg[5] is absorbed into DSP m_fir/s_mult_reg[6]0.
+DSP Report: register m_fir/s_data_reg[6] is absorbed into DSP m_fir/s_mult_reg[6]0.
+DSP Report: operator m_fir/s_mult_reg[6]0 is absorbed into DSP m_fir/s_mult_reg[6]0.
+DSP Report: operator m_fir/s_mult_reg[6]0 is absorbed into DSP m_fir/s_mult_reg[6]0.
+DSP Report: Generating DSP m_fir/s_add_10, operation Mode is: PCIN+A2:B2+C'.
+DSP Report: register m_fir/s_add_0_reg[3] is absorbed into DSP m_fir/s_add_10.
+DSP Report: register A is absorbed into DSP m_fir/s_add_10.
+DSP Report: register m_fir/s_add_0_reg[4] is absorbed into DSP m_fir/s_add_10.
+DSP Report: operator m_fir/s_add_10 is absorbed into DSP m_fir/s_add_10.
+DSP Report: Generating DSP m_fir/s_mult_reg[5]0, operation Mode is: A''*(B:0x10eb).
+DSP Report: register m_fir/s_data_reg[4] is absorbed into DSP m_fir/s_mult_reg[5]0.
+DSP Report: register m_fir/s_data_reg[5] is absorbed into DSP m_fir/s_mult_reg[5]0.
+DSP Report: operator m_fir/s_mult_reg[5]0 is absorbed into DSP m_fir/s_mult_reg[5]0.
+DSP Report: operator m_fir/s_mult_reg[5]0 is absorbed into DSP m_fir/s_mult_reg[5]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[2]0, operation Mode is: C'+A''*(B:0x10301).
+DSP Report: register m_fir/s_data_reg[1] is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: register m_fir/s_data_reg[2] is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: register C is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: operator m_fir/s_mult_reg[2]0 is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: operator m_fir/s_mult_reg[2]0 is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[4]0, operation Mode is: ACIN''*(B:0x40b1).
+DSP Report: register m_fir/s_data_reg[3] is absorbed into DSP m_fir/s_mult_reg[4]0.
+DSP Report: register m_fir/s_data_reg[4] is absorbed into DSP m_fir/s_mult_reg[4]0.
+DSP Report: operator m_fir/s_mult_reg[4]0 is absorbed into DSP m_fir/s_mult_reg[4]0.
+DSP Report: operator m_fir/s_mult_reg[4]0 is absorbed into DSP m_fir/s_mult_reg[4]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[3]0, operation Mode is: A''*(B:0x1a6d).
+DSP Report: register m_fir/s_data_reg[2] is absorbed into DSP m_fir/s_mult_reg[3]0.
+DSP Report: register m_fir/s_data_reg[3] is absorbed into DSP m_fir/s_mult_reg[3]0.
+DSP Report: operator m_fir/s_mult_reg[3]0 is absorbed into DSP m_fir/s_mult_reg[3]0.
+DSP Report: operator m_fir/s_mult_reg[3]0 is absorbed into DSP m_fir/s_mult_reg[3]0.
+DSP Report: Generating DSP m_fir/s_mult_reg[2]0, operation Mode is: A''*(B:0x10301).
+DSP Report: register m_fir/s_data_reg[1] is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: register m_fir/s_data_reg[2] is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: operator m_fir/s_mult_reg[2]0 is absorbed into DSP m_fir/s_mult_reg[2]0.
+DSP Report: Generating DSP m_fir/s_add_1_reg, operation Mode is: (PCIN+A2:B2+C')'.
+DSP Report: register m_fir/s_add_0_reg[1] is absorbed into DSP m_fir/s_add_1_reg.
+DSP Report: register A is absorbed into DSP m_fir/s_add_1_reg.
+DSP Report: register m_fir/s_add_0_reg[2] is absorbed into DSP m_fir/s_add_1_reg.
+DSP Report: register m_fir/s_add_1_reg is absorbed into DSP m_fir/s_add_1_reg.
+DSP Report: operator m_fir/s_add_10 is absorbed into DSP m_fir/s_add_1_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_fir/m_axis_tdata_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 788.355 ; gain = 494.551
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 788.414 ; gain = 495.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+---------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name    | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+---------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|fir_controller | A''*(B:0x1733a)             | 24     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|top_vhdl       | C'+A2*(B:0x139c4)           | 24     | 18     | 23     | -      | 42     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
-|top_vhdl       | ACIN''*(B:0x23e7)           | 24     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|top_vhdl       | (A:0x5dd91e)*B''            | 24     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_controller | (PCIN>>17)+(A:0x5dd91e)*B'' | 24     | 7      | -      | -      | 30     | 0    | 2    | -    | -    | -     | 0    | 1    | 
-|top_vhdl       | A''*(B:0x3923)              | 24     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|top_vhdl       | A''*(B:0xec8f)              | 24     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|top_vhdl       | (PCIN>>17)+A''*(B:0x17)     | 24     | 6      | -      | -      | 30     | 2    | 0    | -    | -    | -     | 0    | 1    | 
-|fir_controller | ACIN2*(B:0x1733a)           | 24     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_controller | A''*(B:0x7b51)              | 24     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_controller | A''*(B:0x23e7)              | 24     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|top_vhdl       | A''*(B:0x7b51)              | 24     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|top_vhdl       | A2*(B:0x139c4)              | 24     | 18     | -      | -      | 42     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-+---------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++---------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_vhdl       | A''*(B:0x19d26)       | 24     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | C'+A''*(B:0x19d26)    | 24     | 18     | 23     | -      | 42     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|top_vhdl       | (C'+(A2*(B:0x7b1))')' | 24     | 12     | 43     | -      | 46     | 1    | 0    | 1    | -    | -     | 1    | 1    | 
+|top_vhdl       | A''*(B:0x10301)       | 24     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | C'+A''*(B:0x10301)    | 24     | 18     | 23     | -      | 42     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|top_vhdl       | A''*(B:0x1a6d)        | 24     | 14     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_controller | A''*(B:0x40b1)        | 24     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | A''*(B:0x10eb)        | 24     | 14     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | PCIN+A2:B2+C'         | 28     | 18     | 46     | -      | -1     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|fir_controller | A''*(B:0x10eb)        | 24     | 14     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | C'+A''*(B:0x10301)    | 24     | 18     | 23     | -      | 42     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|top_vhdl       | ACIN''*(B:0x40b1)     | 24     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | A''*(B:0x1a6d)        | 24     | 14     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | A''*(B:0x10301)       | 24     | 18     | -      | -      | 42     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_vhdl       | (PCIN+A2:B2+C')'      | 28     | 18     | 46     | -      | -1     | 1    | 1    | 1    | -    | -     | 0    | 1    | 
++---------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -370,13 +374,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'm_clk/axis_clk' to pin 'm_clk/bbstub_axis_clk/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 853.691 ; gain = 559.887
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 840.727 ; gain = 547.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 859.645 ; gain = 565.840
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 845.438 ; gain = 552.125
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -388,7 +392,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -412,7 +416,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -425,7 +429,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -437,25 +441,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -473,57 +477,55 @@ Report Cell Usage:
 |      |Cell             |Count |
 +------+-----------------+------+
 |1     |clk_wiz_0_bbox_0 |     1|
-|2     |CARRY4           |   181|
+|2     |CARRY4           |   134|
 |3     |DSP48E1          |     6|
 |4     |DSP48E1_1        |     1|
-|5     |DSP48E1_2        |     1|
+|5     |DSP48E1_2        |     2|
 |6     |DSP48E1_3        |     1|
 |7     |DSP48E1_4        |     1|
 |8     |DSP48E1_5        |     1|
-|9     |DSP48E1_6        |     1|
-|10    |DSP48E1_7        |     1|
-|11    |LUT1             |   101|
-|12    |LUT2             |   487|
-|13    |LUT3             |   166|
-|14    |LUT4             |    96|
-|15    |LUT5             |     9|
-|16    |LUT6             |    12|
-|17    |FDRE             |  1098|
-|18    |IBUF             |     2|
-|19    |OBUF             |     7|
+|9     |LUT1             |    17|
+|10    |LUT2             |   491|
+|11    |LUT3             |    32|
+|12    |LUT4             |    95|
+|13    |LUT5             |     8|
+|14    |LUT6             |    54|
+|15    |FDRE             |   742|
+|16    |IBUF             |     2|
+|17    |OBUF             |     7|
 +------+-----------------+------+
 
 Report Instance Areas: 
 +------+---------+---------------+------+
 |      |Instance |Module         |Cells |
 +------+---------+---------------+------+
-|1     |top      |               |  2173|
-|2     |  m_fir  |fir_controller |  1854|
-|3     |  m_i2s2 |axis_i2s2      |   309|
+|1     |top      |               |  1595|
+|2     |  m_fir  |fir_controller |  1284|
+|3     |  m_i2s2 |axis_i2s2      |   301|
 +------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 883.246 ; gain = 589.441
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 883.246 ; gain = 250.727
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 883.246 ; gain = 589.441
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 868.000 ; gain = 235.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 868.000 ; gain = 574.688
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'top_vhdl' is not ideal for floorplanning, since the cellview 'fir_controller' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 868.000 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-66 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 883.246 ; gain = 600.922
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.246 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 868.000 ; gain = 586.168
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 868.000 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/mute/mute.runs/synth_2/top_vhdl.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/audio_fir/audio_fir.runs/synth_2/top_vhdl.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_vhdl_utilization_synth.rpt -pb top_vhdl_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Feb 12 11:45:35 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 13 16:05:57 2022...

@@ -13,10 +13,10 @@ use work.fir_pkg.ALL;
 
 entity fir_controller is
     generic(
-        N_TAPS     : integer:=11; -- number of data to store in memory to perform filter operation
+        N_TAPS     : integer:=12; -- number of data to store in memory to perform filter operation
         DATA_WIDTH : integer:=24; -- bit width of data
         COEFF_WIDTH: integer:=24; -- bit width of coeff
-        SCALING    : integer:=23  -- scaling factor for coefficients -> should be coeff_width -1 if coeff in (-1,1)
+        SCALING    : integer:=22  -- scaling factor for coefficients -> should be coeff_width -2(signed) if coeff in (-1,1)
     );
     Port (
        i_clk    : in std_logic;
@@ -36,17 +36,18 @@ end fir_controller;
 
 architecture Behavioral of fir_controller is
 
-    signal coeff_0: integer:=160648;
-    signal coeff_1: integer:=424785;
-    signal coeff_2: integer:=-515097;
-    signal coeff_3: integer:=-2002118;
-    signal coeff_4: integer:=407843;
-    signal coeff_5: integer:=6150430;
-    signal coeff_6: integer:=3075215;
-    signal coeff_7: integer:=-2002118;
-    signal coeff_8: integer:=-515097;
-    signal coeff_9: integer:=424785;
-    signal coeff_10: integer:=160648;
+    signal coeff_0: integer:=1969;
+    signal coeff_1: integer:=211533;
+    signal coeff_2: integer:= 132611;
+    signal coeff_3: integer:=-779667;
+    signal coeff_4: integer:=-638799;
+    signal coeff_5: integer:=1052907;
+    signal coeff_6: integer:=1052907;
+    signal coeff_7: integer:=-638799;
+    signal coeff_8: integer:=-779667;
+    signal coeff_9: integer:= 132611;
+    signal coeff_10: integer:=211533;
+    signal coeff_11: integer:=1969;
 
     signal coeff_s: coeff_array:=( to_signed(coeff_0,24),
                                    to_signed(coeff_1,24),
@@ -58,7 +59,8 @@ architecture Behavioral of fir_controller is
                                    to_signed(coeff_7,24),
                                    to_signed(coeff_8,24),
                                    to_signed(coeff_9,24),
-                                   to_signed(coeff_10,24));
+                                   to_signed(coeff_10,24),
+                                   to_signed(coeff_11,24));
 
     type t_data_pipe is array (0 to N_TAPS-1) of signed(DATA_WIDTH -1 downto 0); 
     type t_coeff is array (0 to N_TAPS-1) of signed(COEFF_WIDTH -1 downto 0); 
@@ -117,7 +119,7 @@ begin
    p_output : process (i_clk) -- compute output
    begin
         if(rising_edge(i_clk)) then 
-           filtered_data <= std_logic_vector(s_add_1(DATA_WIDTH-1+SCALING downto SCALING)); -- recal sign extension in signed type
+            filtered_data <= std_logic_vector(s_add_1(DATA_WIDTH-1+SCALING downto SCALING)); -- recal sign extension in signed type
         end if;
    end process p_output;
 
@@ -136,7 +138,8 @@ begin
         
         if s_axis_tvalid = '1' and s_axis_tready_int = '1' then
            m_axis_tlast <= s_axis_tlast;
-           m_axis_tdata <= filtered_data;   
+            -- gain of 2
+           m_axis_tdata <= filtered_data(DATA_WIDTH-2 downto 0)&'0';   
         end if;
     end if;    
    end process;
