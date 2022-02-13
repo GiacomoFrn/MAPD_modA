@@ -1,0 +1,19 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5c28985b7a3e4fdb8df115f9f52361ab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'coeff_0' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/fir/fir.srcs/sim_1/new/fir_tb.vhd:48]
+WARNING: [VRFC 10-3813] value in initialization depends on signal 'coeff_1' [C:/Users/giaco/Documents/Uni/PoD/MaPD/MAPD_modA/fir/fir.srcs/sim_1/new/fir_tb.vhd:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.fir_pkg
+Compiling architecture rtl of entity xil_defaultlib.fir_filter [\fir_filter(data_width=4,scaling...]
+Compiling architecture behavioral of entity xil_defaultlib.fir_tb
+Built simulation snapshot fir_tb_behav
