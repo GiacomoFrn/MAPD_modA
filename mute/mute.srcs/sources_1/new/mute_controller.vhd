@@ -30,14 +30,19 @@ entity mute_controller is
           m_axis_tready : in std_logic;
           
           enable_mute : in std_logic;
-          muted       : out std_logic
+          muted       : out std_logic;
+          
+          m_axis_tvalid_int : inout std_logic;
+          s_axis_tready_int : inout std_logic;
+          
+          sending:out std_logic:='0'
      );
 end mute_controller;
 
 architecture Behavioral of mute_controller is
          
-          signal m_axis_tvalid_int : std_logic;
-          signal s_axis_tready_int : std_logic;
+         -- signal m_axis_tvalid_int : std_logic;
+          --signal s_axis_tready_int : std_logic;
 
 begin
           s_axis_tready_int <= m_axis_tready or not m_axis_tvalid_int;
@@ -55,7 +60,7 @@ begin
                   
                   if s_axis_tvalid = '1' and s_axis_tready_int = '1' then
                      m_axis_tlast <= s_axis_tlast;
-                  
+                     sending<='1';
                      if enable_mute = '1' then
                         m_axis_tdata <= (Others => '0');
                         muted <= '1';
@@ -63,6 +68,8 @@ begin
                         m_axis_tdata <= s_axis_tdata;
                         muted <= '0';   
                      end if;
+                  else
+                    sending <='0';
                   end if;
               end if;
           end process;           

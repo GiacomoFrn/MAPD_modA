@@ -1,0 +1,7 @@
+Running: xsim.dir/mute_tb_func_synth/xsimk.exe -simmode gui -wdb mute_tb_func_synth.wdb -simrunnum 0 -socket 58576
+Design successfully loaded
+Design Loading Memory Usage: 6240 KB (Peak: 6240 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6852 KB (Peak: 6852 KB)
+Simulation CPU Usage: 0 ms

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"mute_tb_func_synth.vhd" \
+"../../../../../mute.srcs/sources_1/new/mute_controller.vhd" \
+"../../../../../mute.srcs/sim_1/new/mute_tb.vhd" \
+
+# Do not sort compile order
+nosort
