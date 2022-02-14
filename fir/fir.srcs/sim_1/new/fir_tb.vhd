@@ -56,11 +56,13 @@ signal flag :std_logic;
 signal s_add_1   : signed(8 downto 0):= (others => '0');
 
 signal n: integer:=-8;
-signal signed_n: signed(4 downto 0):=to_signed(-8,5);
-signal vector_n: std_logic_vector(4 downto 0):=std_logic_vector(to_signed(-8,5));
+signal signed_r: signed(4 downto 0);
+signal signed_n: signed(4 downto 0):=to_signed(-10,5);
+signal signed_f: signed(2 downto 0):=to_signed(2,3);
+signal vector_n: std_logic_vector(4 downto 0):=std_logic_vector(to_signed(-10,5));
 signal abs_vector_n: std_logic_vector(4 downto 0):=std_logic_vector(abs(to_signed(-8,5)));
 signal test:std_logic;  
-                               
+signal sum_vector: signed(5 downto 0);                              
 begin
 
 uut: fir_filter port map(
@@ -74,13 +76,21 @@ uut: fir_filter port map(
                           s_add_1 => s_add_1
                          );
 p_test: process
+variable signed_t: signed(7 downto 0);
+variable signed_div: signed(5 downto 0);
 begin
-    if(vector_n(4) = "010") then
-        test<='1';
-    else 
-        test <='0';
+    signed_t:= abs(signed_n*signed_f);
+    signed_div:= (5 downto 4 => signed_n(4))&signed_n(4 downto 1);
+    sum_vector <= signed_div;
+    --test <= signed_t(4);
+    if(signed_t(4)='1' and (signed_n(4)='1' or signed_f(2)='1')) then
+        signed_r<=(4 downto 0 => '1');
+    elsif(signed_t(4)='1') then
+       signed_r<="01111";
+     else
+        signed_r<=resize(signed_n*signed_f,5);
     end if;
-    wait;
+    wait for 25 ns;
 end process;    
  
 p_clk :  process
